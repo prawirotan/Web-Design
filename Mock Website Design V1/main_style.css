@@ -1,0 +1,311 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .logo {
+    display:flex;
+    background-color: crimson;
+  }
+
+  .kategoriDropdown {
+    display: block;
+    position: relative;
+    left: 10px;
+    font-family: sans-serif;
+    color: white;
+  }
+
+  .topnav {
+    overflow:hidden;
+    background-color:darkred;
+    font-size: 16px;
+  }
+
+  .topnav a {
+    float: left;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    
+  }
+
+  .topnav a:hover {
+    background-color: red;
+    color: whitesmoke;
+  }
+
+  .topnav a.active {
+    background-color:tomato;
+    color: wheat;
+  }
+
+  .topnav a.daftar {
+    background-color: antiquewhite;
+    color: black;
+  }
+
+  .topnav-right {
+    float: right
+  }
+
+  .searchBox {
+    color: white;
+    position: fixed;
+    top: 5px;
+    right: 32.5%;
+    z-index: 1;
+  }
+
+  .searchBox #searchFont {
+    text-align: center;
+    display: block;
+    background-color: crimson;
+  }
+
+  .searchBox input {
+    height: 40px;
+    width: 550px;
+  }
+
+  label {
+    float:left;
+    clear: left;
+    width: 250px;
+    text-align: left; 
+  }
+
+  input {
+    float:left;
+  }
+
+  .boxModel {
+      width: 350px;
+      padding: 15px;
+      border: 5px solid tomato;
+      margin: 0 auto;
+  }
+
+  #backgroundManip {
+      border: 5px dotted sandybrown;
+      padding: 15px;
+      background:thistle;
+      background-clip:border-box;    
+  }
+
+  .weirdParagraph p {
+      display: inline-block;
+      grid-template-columns: 70% 30%;
+      margin: 10px;
+      padding: 5px;
+      border: 4px dotted burlywood;
+      background: lightcyan;
+  }
+
+
+  .weirdParagraph #weirdText {
+      display: inline-table;
+      font-size: 15px;
+      writing-mode: vertical-rl;
+      background-color:purple;
+      color: white;
+      transform: rotateY(130deg);
+  }
+
+  .open-button {
+    display: grid;
+    background-color: crimson;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.65;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  .chat-popup {
+    display: none; /*to hide*/
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid crimson;
+    opacity: 1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 0 auto;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: wheat;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 0.8;
+  }
+
+  .anim_box_title {
+      display: inline-block;
+      position: relative;
+      width: 350px;
+      height: 100px;
+      animation-name: box;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: center;
+  }
+
+  @keyframes box {
+      from {background-color: crimson; transform: rotateY(0deg)}
+      to {background-color: lightsalmon; transform: rotateY(360deg);}
+  }
+
+  #kategori {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 15px;
+    padding: 10px 10px;
+  }
+  
+  #kategoriDropdown {
+    z-index: 5;
+    column-count: 2;
+  }
+
+  .automobiles-dropdown-content-right {
+    display: none;
+    position: absolute;
+    left: 380px;
+    top: 48px;
+    min-width: 160px;
+    background-color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+
+  .dropdown:hover #kategoriDropdown {
+    display: block;
+    position: absolute;
+    top: 15px;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content-right {
+    display: none;
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    min-width: 160px;
+    background-color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+
+  .dropdown-content-left {
+    display: none;
+    position: absolute;
+    right: 150px;
+    bottom: 0px;
+    min-width: 160px;
+    background-color: aliceblue;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
+  .dropdownhover:hover .dropdown-content-right {
+    display: table;
+  }
+  .dropdownhover:hover .dropdown-content-left {
+    display: table;
+  }
+  .dropdownhover:hover .automobiles-dropdown-content-right {
+    display: table;
+  }

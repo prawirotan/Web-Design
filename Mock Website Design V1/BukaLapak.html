@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel=stylesheet type="text/css" href="main_style.css">
+    <script src="mybkjs.js"></script>
+</head>
+
+<body>
+<div class="logo">
+    <img src = "bukalapak_logo.png"  style="width:200px; height: 80px;" alt="Bukalapak Logo">
+    <div class="dropdown">
+            <a id="kategori" href="#kategori">Kategori</a>
+            <div id="kategoriDropdown" class="dropdown-content">
+                 <div class="dropdownhover">
+                        <a class="dropbtn2" href="#computers">Computers</a>
+                        <div class="dropdown-content-right">
+                            <a href="#laptops">Laptops</a>
+                            <a href="#desktops">Desktops</a>
+                            <a href="#notebooks">Notebooks</a>
+                        </div>
+                </div>
+                <a href="#mobile_devices">Mobile Devices</a>
+                <a href="#fashion_accessories">Fashion Accessories</a>
+                <a href="#watches">Watches</a>  
+            
+                <a href="#beauty_products">Beauty Products</a>
+                <div class="dropdownhover">
+                        <a class="dropbtn2" href="#automobiles">Automobiles</a>
+                        <div class="automobiles-dropdown-content-right">
+                            <a href="#cars">Cars</a>
+                            <a href="#motorbikes">Motorbikes</a>
+                            <a href="#miscellaneous">Miscellaneous</a>
+                        </div>
+                </div>
+                <a href="#idk1">idk1</a>
+                <a href="#idk2">idk2</a>
+            </div>   
+    </div>
+</div>
+    <div class="searchBox">
+        <form action="/action_page.php">
+            <div id="searchFont">Search BukaLapak</div>
+            <input name="Search" type="text" placeholder="Aku mau belanja...">
+        </form>
+    </div>
+</div>
+
+    <div class="topnav">
+    <nav>
+    <a class="active" href="#home">Home</a>
+    <div class="dropdown">
+        <a onclick="dropdown_function_evoucher()" class="dropbtn" href="#evoucher">e-Voucher and Ticket</a>
+        <div id="evDropdown" class="dropdown-content">
+            <div class="dropdownhover">
+                <a class="dropbtn2" href="#evoucher">e-Vouchers ></a>
+                <div class="dropdown-content-right">
+                    <a href="#purchase evoucher">Purchase e-Vouchers</a>
+                    <a href="#bid for e-vouchers">Bid for e-Vouchers</a>
+                    <a href="#Lucky Draw">Lucky Draw</a>
+                </div>
+            </div>
+            <a href="#promotion">Promotions</a>
+            <a href="#buy_ticket">Buy Ticket</a>
+        </div>
+    </div>
+
+    <a href="#bukareksa">BukaReksa</a>
+    <div class="topnav-right">
+    <div class="dropdown">
+        <a onclick="dropdown_function_login()" class="dropbtn" href="#login">Login</a>
+        <div id="lgDropdown" class="dropdown-content">
+            <a href="#bukaregis">BukaRegis</a>
+            <a href="#googleID">Google ID</a>
+            <a href="facebook">Facebook</a>
+            <div class="dropdownhover">
+                <a class="dropbtn2" href="#others">< Others</a>
+                <div class="dropdown-content-left">
+                    <a href="#otr">One-time Register</a>
+                    <a href="#handphone">Handphone</a>
+                    <a href="#email">E-mail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <a class="daftar" href="#daftar">Daftar</a>
+    </div>
+    </nav>  
+    </div>
+   
+    <div id="backgroundManip">
+        <article>
+        <header>
+            <div class="boxModel">
+                <div class="anim_box_title">Welcome Home to BukaLapak!<div>
+            </div>
+        </header>
+        </article>
+    </div>           
+    <div style="padding-left: 16px">
+    
+    <p>First and foremost, please enter your credentials to receive a surprise from our website!</p>        
+    <div>
+    <form action="/action_page.php">
+        <label>First Name:</label><input type="text">
+        <label>Last Name:</label><input type="text">
+        <label>User Name:</label><input type="text">
+        <label>Gender:</label><input type="text">
+        <label>Age:</label><input type="number">
+        <label>Email:</label><input type="text">
+        <label></label><input type="submit" value="Submit">
+    </form>
+    </div>      
+    
+    </div>
+                       
+    <div>
+    <label>
+    <footer> <dl> 
+    <dt>Published</dt> 
+    <dd>30 August 2019</dd> 
+    <dt>Tags</dt> 
+    <dd><a href="/">Blank Weirdness, </a> <a href="/">Blank Coolness</a></dd> 
+    </dl> </footer>
+    </label>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Chat Administrator</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <label for="info>">We will take 1-3 working days to respond. Thank you.</label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="weirdParagraph">
+        <div id="first"><p>So this is an absolutely amazing version of BukaLapak's Mock website thingy going on.
+                I would like to thank everyone for their endless support in the making of this website.
+                Actually it's just me, myself and I, so thank me.</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reprehenderit recusandae esse quidem officia eum quos fugit dolorum? Ut magni, dolorum debitis iste maiores vero, 
+            ad enim voluptate non ab reprehenderit nihil rem. Nulla dicta eos tenetur, provident quas necessitatibus minus, 
+            saepe rem suscipit eum perferendis harum eaque, exercitationem hic!</p></div>   
+            <div id="weirdText">This is the weirdest text animation ever</div> 
+    </div> 
+
+</body>
+</html>
